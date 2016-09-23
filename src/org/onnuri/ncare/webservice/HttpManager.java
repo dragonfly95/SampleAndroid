@@ -11,7 +11,7 @@ public class HttpManager {
 	private static final String TAG = HttpManager.class.getSimpleName();
 	
 	
-	private static final String URL = "icare.ionnuri.org";
+	private static final String URL = "http://localhost:3000";
 	private static final String PORT = null;
 	private static final String PREFIX = "/child_ecare/rest";
 	private String SERVER_URL = null;
