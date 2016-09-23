@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#cccccc" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="출석 체크"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+           
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/textViewCampusTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="캠퍼스"
+                android:textSize="15sp" />
+            
+            <TextView
+                android:id="@+id/textViewCampusName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/buttonSetCampus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="설정"
+                android:textSize="15sp" />
+            
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/textViewDivisionTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="부서"
+                android:textSize="15sp" />
+            
+            <TextView
+                android:id="@+id/textViewDivisionName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/buttonSetDivision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="설정" 
+                android:textSize="15sp" />
+            
+		</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/textViewGradeTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="학년"
+                android:textSize="15sp" />
+            
+            <TextView
+                android:id="@+id/textViewGradeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/buttonSetGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="설정" 
+                android:textSize="15sp" />
+            
+		</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/textViewClassTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="반"
+                android:textSize="15sp" />
+            
+            <TextView
+                android:id="@+id/textViewClassName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/buttonSetClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="설정" 
+                android:textSize="15sp" />
+            
+		</LinearLayout>
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:gravity="center" >
+            
+            <Button
+                android:id="@+id/buttonCheckAttendance"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="출석체크 하기" 
+                android:textSize="15sp" />
+           
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

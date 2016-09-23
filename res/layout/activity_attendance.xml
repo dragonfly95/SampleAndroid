@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#cccccc" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+	            android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:gravity="center" />
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	                android:layout_height="50dp"
+	                android:layout_weight="1"
+	                android:gravity="center" >
+            
+                <TextView
+	                android:id="@+id/textViewTitle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="주일 학교 출석 체크"
+	                android:textSize="15sp"
+	                android:textStyle="bold" />
+	                
+            </LinearLayout>
+            
+            <LinearLayout
+	            android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:gravity="center" >
+            
+                <Button
+	                android:id="@+id/buttonCancel"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="닫기" />
+	                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="#aaaaaa" >
+
+            <TextView
+                android:id="@+id/textViewClassTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="사랑반"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="#aaaaaa" >
+            
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="출석 체크 날짜"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+        
+        <ListView
+            android:id="@+id/listViewAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:background="#ffffff" >
+        </ListView>
+                 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp" 
+            android:gravity="center"  >
+            
+            <Button
+                android:id="@+id/buttonCheckAttendance"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="출석체크 완료" 
+                android:textSize="15sp" />
+           
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

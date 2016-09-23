@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+        	android:background="#cccccc" >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="결석 사유"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+           
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listViewAbsence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="#cccccc" >
+            
+            <TextView
+                android:id="@+id/textViewCause"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="결적 사유를 직접 입력합니다."
+                android:textSize="15sp"/>
+           
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:padding="5dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+                
+                <EditText
+                    android:id="@+id/editTextCause"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+	                android:textStyle="bold"
+	                android:background="#ffffff"  >
+                </EditText>
+            
+                <Button
+	                android:id="@+id/buttonCause"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:text="저장"
+	                android:textSize="15sp" />
+                
+            </LinearLayout>
+            
+		</LinearLayout>
+		
+    </LinearLayout>
+
+</RelativeLayout>
